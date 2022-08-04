@@ -5,12 +5,20 @@
     text-decoration: none;
    }
 
+
+
 body {
     background-color: rgba(237, 240, 245, 1); 
     margin:0px 20px 0px 20px;
-    height: fit-content;
+    
     
 }
+
+.nav-item1 {
+    padding: 8px;
+    
+}
+
 
 a {
     
@@ -23,6 +31,65 @@ a:hover {
     color: rgba(3, 55, 104, 1);
 }
 
+#padre {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#row {
+    height:300px;
+    width: 700px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    
+}
+
+#contact_me_container {
+
+    display: flex;
+    justify-content: center;
+}
+
+#contact_me_container2 {
+    height: 500px;
+    width: 700px;
+    margin-top: 5%;
+}
+
+#bkgnd_color {
+    background-color: rgba(237, 240, 245, 1);
+    color: rgba(237, 240, 245, 1);
+    border-color: rgba(6, 2, 29, 1); 
+}
+
+
+#gallery_modulo_img {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery_modulo_txt_right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    
+}
+
+#gallery_modulo_txt_left {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: left;
+    
+}
+
+
+.img_gallery_contactme {
+    height: 200px;
+}
 
 /* header*/ 
 
@@ -301,6 +368,10 @@ a:hover {
         margin-top: 100px;
         margin-bottom: 20px;
         
+        }
+
+        .img_gallery_aboutme {
+            width: 0px;
         }
 
         /*contact me mobile */
@@ -676,6 +747,10 @@ a:hover {
     .space_text4 {
     margin-top: 100px;
     margin-bottom: 20px;
+    }
+
+    .img_gallery_aboutme {
+        width: 200px;
     }
 
     /*contact me desktop */
