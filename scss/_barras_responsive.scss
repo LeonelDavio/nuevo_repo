@@ -1,0 +1,113 @@
+
+/* Footer */
+
+@media only screen and (max-width: 600px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 3fr 3fr 1fr ;
+        grid-template-rows: 45px  ;
+        grid-template-areas: ". button1  button2  . ";                             
+        align-items:center;
+        justify-items: center;
+        background-color: rgba(8, 38, 66, 1);
+        position: bottom
+    }
+    #footer_button1 {
+        grid-area: button1 ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+    #footer_button2 {
+        grid-area: button2 ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         }
+    .footer_special_text_color {
+        font-size: 16px; 
+        color: rgba(237, 240, 245, 1); 
+        font-family: 'Ubuntu', sans-serif; 
+        font-weight: 400; 
+        text-decoration: none;        
+    }
+    }
+
+@media only screen and (min-width:600px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 45px 45px ;
+        grid-template-areas: ". . button1 button1 button2 button2 . . "
+                             ". . button1 button1 button2 button2 . . ";
+        align-items:center;
+        justify-items: center;
+        background-color: rgba(8, 38, 66, 1);
+        position: bottom
+    }
+    
+    #footer_button1 {
+        grid-area: button1 ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 33%;
+        width: 75%;
+        
+    }
+    #footer_button2 {
+        grid-area: button2 ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 33%;
+        width: 75%;  
+    }
+    .footer_special_text_color {
+        font-size: 16px; 
+        color: rgba(237, 240, 245, 1); 
+        font-family: 'Ubuntu', sans-serif; 
+        font-weight: 400; 
+        text-decoration: none;
+        padding: 8px;
+    }
+    }
+
+/* NAV BAR */
+
+
+
+@media only screen and (min-width:600px) {
+    #nav {
+        display: grid;
+        width: 600px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 50px;
+        grid-template-areas:"home gallery1 gallery2 gallery3 aboutme";
+        background-color:rgba(237, 240, 245, 1) ; 
+        position: sticky; top: 0%;
+    
+        }
+    
+    #nav_conteiner {
+        grid-area: navbar_conteiner;
+        justify-content: right;  
+        align-content: right;
+        align-items: right;
+        justify-items: right;  
+        display: flex;
+        flex-direction: row-reverse;       
+    }
+
+    #name1 {
+        grid-area: name1;
+        display: flex;
+        align-items: center;
+        font-size: 50px; 
+        color: rgba(8, 38, 66, 1); 
+        font-family: 'Ubuntu', sans-serif; 
+        font-weight: 300; 
+        padding-left: 0%;
+        padding-top: 0%;
+    }
+    }

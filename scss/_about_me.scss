@@ -1,0 +1,90 @@
+
+
+@media only screen and (max-width: 600px) {
+    #padre_about_me {
+        
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: center;
+        
+        }
+        .padre_about_me2 {
+        justify-content: center;
+        width: 300px;    
+        flex-direction: column;
+        }
+       
+        .space_text {
+        margin: 20px;
+        
+        }
+        .space_text2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+        }
+    
+        .space_text3 {
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 20px; 
+        color: rgba(6, 2, 29, 1); 
+        font-family: 'Ubuntu', sans-serif; 
+        font-weight:500;
+               
+        }
+        .space_text4 {
+        margin-top: 100px;
+        margin-bottom: 20px;
+        
+        }
+
+        .img_gallery_aboutme {
+            width: 0px;
+        }
+
+
+}
+
+@media only screen and (min-width:600px) {
+    #padre_about_me {
+        
+        margin-top: 120px;
+        margin-bottom: 120px;
+        display: flex;
+        justify-content: center;
+        
+        }
+        .padre_about_me2 {
+        justify-content: center;
+        width: 600px;    
+        flex-direction: column;
+        }
+       
+        .space_text {
+        margin: 20px;
+        }
+        .space_text2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+        }
+    
+        .space_text3 {
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 20px; 
+        color: rgba(6, 2, 29, 1); 
+        font-family: 'Ubuntu', sans-serif; 
+        font-weight:500;        
+        }
+        .space_text4 {
+        margin-top: 100px;
+        margin-bottom: 20px;
+        }
+    
+        .img_gallery_aboutme {
+            width: 200px;
+        }
+    }
