@@ -16,61 +16,13 @@
    }
 
 
-/* Estructura*/
+
+
+/* Objetos_comunes */
 
 .nav-item1 {
     padding: 8px;    
     }
-#padre {
-    display: flex;
-    justify-content: center;    
-    }
-    
-#row {
-    height:300px;
-    width: 700px;
-    margin-top: 4%;
-    margin-bottom: 4%;    
-    }
-
-#contact_me_container {
-
-    display: flex;
-    justify-content: center;
-    }
-
-#contact_me_container2 {
-    height: 500px;
-    width: 700px;
-    margin-top: 5%;
-    }
-
-#gallery_modulo_img {
-    display: flex;    
-    justify-content: center;
-    align-items: center;
-    }
-
-#gallery_modulo_txt_right {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: right;
-    
-    }
-
-#gallery_modulo_txt_left {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: left;    
-    }   
-
-
-.img_gallery_contactme {
-    height: 200px;
-    }
-
 
 #button_home{
     grid-area: home;
@@ -104,15 +56,78 @@
     justify-content: center;
     }
 
+/* Home */
+
+
+
+
+/* Contact_me */
+
+#contact_me_container {
+
+    display: flex;
+    justify-content: center;
+    }
+
+#contact_me_container2 {
+    height: 500px;
+    width: 700px;
+    margin-top: 5%;
+    }
+
+.img_gallery_contactme {
+    height: 200px;
+    }
+
+
+/* About_me */
+
+
+
+/* Gallery*/
+
+#padre {
+    display: flex;
+    justify-content: center;    
+    }
+    
+#row {
+    height:300px;
+    width: 700px;
+    margin-top: 4%;
+    margin-bottom: 4%;    
+    }
+
+#gallery_modulo_img {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    }
+
+#gallery_modulo_txt_right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    
+    }
+
+#gallery_modulo_txt_left {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: left;    
+    }   
+
+
 /* Estilos */
 
 
 body {
-    background-color: rgba(237, 240, 245, 1); 
-    margin:0px 20px 0px 20px;    
+    margin:0px 20px 0px 20px;
+    background-color: $color_brand_01;     
     }
 a {    
-    color: rgba(6, 2, 29, 1); 
     transition: color 200ms;
     }
 
@@ -131,14 +146,14 @@ img:hover {
 
 .footer_special_text_color:hover {
     text-decoration: underline;
-    color:  rgba(237, 240, 245, 1);
+    color: $color_brand_01;
     
     }
 
 #bkgnd_color {
-    background-color: rgba(237, 240, 245, 1);
-    color: rgba(237, 240, 245, 1);
-    border-color: rgba(6, 2, 29, 1); 
+    background-color: $color_brand_01;
+    color: $color_brand_01;
+    border-color: $color_brand_03; 
     }
 
 
@@ -169,14 +184,13 @@ img:hover {
 @media only screen and (min-width:600px) {
 
 
-    body {
-        background-color: rgba(237, 240, 245, 1); 
+    body { 
         margin:0px 20px 0px 20px
     }
 
     header {
         display: grid;
-        background-color:rgba(237, 240, 245, 1) ; 
+        background-color: $color_brand_01;  
         grid-template-columns: 100%;
         grid-template-rows: 80px 50px; 
         grid-template-areas: "name1 "

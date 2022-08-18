@@ -222,29 +222,29 @@
   .img_gallery_aboutme {
     width: 200px; } }
 
+/* variables */
 @media only screen and (max-width: 600px) {
   .text_title {
     font-size: 40px;
-    color: #082642;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     kerning: 30px; }
   .text_subtitle {
     font-size: 24px;
     color: #06021d;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     text-align: center; }
   .text_focused {
     font-size: 24px;
     color: #06021d;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     text-decoration: none; }
   .text_regular {
     font-size: 16px;
     color: #06021d;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     text-align: center;
     display: inline; }
@@ -254,7 +254,7 @@
     align-items: center;
     font-size: 40px;
     color: #082642;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 300;
     padding-left: 0%;
     padding-top: 0%;
@@ -264,25 +264,25 @@
   .text_title {
     font-size: 40px;
     color: #082642;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 300;
     kerning: 30px; }
   .text_subtitle {
     font-size: 32px;
     color: #06021d;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     text-align: center; }
   .text_focused {
     font-size: 24px;
     color: #06021d;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     text-decoration: none; }
   .text_regular {
     font-size: 16px;
     color: #06021d;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     display: inline;
     line-height: 25px; } }
@@ -520,11 +520,10 @@
 
 /* Estilos */
 body {
-  background-color: #edf0f5;
-  margin: 0px 20px 0px 20px; }
+  margin: 0px 20px 0px 20px;
+  background-color: #edf0f5; }
 
 a {
-  color: #06021d;
   transition: color 200ms; }
 
 /* Interacciones */
@@ -558,7 +557,6 @@ img:hover {
 
 @media only screen and (min-width: 600px) {
   body {
-    background-color: #edf0f5;
     margin: 0px 20px 0px 20px; }
   header {
     display: grid;
