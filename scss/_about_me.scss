@@ -1,5 +1,5 @@
 
-
+@import "estilos_texto";
 @media only screen and (max-width: 600px) {
 
         
@@ -9,8 +9,8 @@
                 div{              
                     div{
                         font-size: 24px;
-                        color: rgba(8, 38, 66, 1);
-                        font-family: 'Ubuntu', sans-serif;
+                        color: $color_brand_02;
+                        font-family: $type_brand;
                         font-weight: 300;                
                         div{
                             font-size: 16px;
