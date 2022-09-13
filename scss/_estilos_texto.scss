@@ -9,78 +9,94 @@ $color_brand_03 : rgba(6, 2, 29, 1);
 $type_brand : 'Ubuntu', sans-serif; 
 
 
+.footer_special_text_color {
+    font-family: $type_brand;
+    color: $color_brand_01;
+    text-decoration: none;
+    font-size: 16px; 
+    font-weight: 400; 
+    padding: 8px;
+    }
+
+#name2 {
+        grid-area: name1;
+        display: flex;
+        align-items: center;
+        font-size: 40px; 
+        color:$color_brand_02;  
+        font-weight: 300; 
+        padding-left: 0%;
+        padding-top: 0%;
+        justify-content: center;
+        text-decoration: none;
+        }
+
+
 @media only screen and (max-width: 600px) {
 
-.text_title {
-    font-size: 40px; 
-    font-family: $type_brand;
-    font-weight: 300; 
-    kerning: 30px;
-}
+.text_style1 {
+        font-family: $type_brand;
+        color: $color_brand_03;
+        font-size: 24px;
+        text-decoration: none;
+        text-align: center;
+        }
+
 .text_subtitle {
-    font-size: 24px; 
-    color: $color_brand_03;
-    font-family: $type_brand;
-    font-weight: 700; 
-    text-align: center;
+    @extend .text_style1;
+    font-weight: 700;     
 }
 .text_focused {
-    font-size: 24px; 
-    color: $color_brand_03;
-    font-family: $type_brand;
-    font-weight:500;
-    text-decoration: none;
+    @extend .text_style1; 
+    font-weight:500;    
 }
 .text_regular {
+    @extend .text_style1;
     font-size: 16px; 
-    color: $color_brand_03;  
-    font-family: $type_brand; 
     font-weight:400; 
-    text-align: center;
     display: inline;
    }
+
 #name1 {
+    @extend .text_style1;
     grid-area: name1;
     display: flex;
     align-items: center;
     font-size: 40px; 
-    color:$color_brand_02; 
-    font-family: $type_brand; 
+    color:$color_brand_02;  
     font-weight: 300; 
     padding-left: 0%;
     padding-top: 0%;
     justify-content: center;
-}
+    text-decoration: none;
+    }
 }
 
 @media only screen and (min-width:600px) {
-    .text_title {
-        font-size: 40px; 
-        color: $color_brand_02; 
-        font-family:  $type_brand;  
-        font-weight: 300; 
-        kerning: 30px;
-    }
-    .text_subtitle {
-        font-size: 32px; 
-        color: $color_brand_03;
-        font-family:  $type_brand; 
-        font-weight: 700; 
-        text-align: center;
-    }
-    .text_focused {
-        font-size: 24px; 
-        color: $color_brand_03; 
-        font-family:  $type_brand; 
-        font-weight:500;
+
+    @mixin estilo_texto ( $tamanio_letra , $variante_letra , $color_letra) {
+        font-size: $tamanio_letra;
+        font-weight: $variante_letra;
+        color: $color_letra;
+        font-family: $type_brand;
         text-decoration: none;
+        text-align: center;        
     }
+    
+
+    .text_subtitle {
+        @include estilo_texto(32px, 700 , $color_brand_03 );
+    }
+
+    .text_focused {
+        @include estilo_texto (24px, 500, $color_brand_03);
+    }
+
     .text_regular {
-        font-size: 16px; 
-        color: $color_brand_03;  
-        font-family:  $type_brand; 
-        font-weight:400; 
+        @include estilo_texto (16px, 400, $color_brand_03); 
         display: inline;
         line-height: 25px;
        }
+    
+       
 }

@@ -1,6 +1,8 @@
 
 /* Footer */
 
+
+
 @media only screen and (max-width: 600px) {
     footer {
         display: grid;
@@ -27,13 +29,6 @@
         justify-content: center;
         }
 
-    .footer_special_text_color {
-        font-size: 16px; 
-        color: rgba(237, 240, 245, 1); 
-        font-family: 'Ubuntu', sans-serif; 
-        font-weight: 400; 
-        text-decoration: none;        
-        }
     
 }
 
@@ -67,14 +62,7 @@
         height: 33%;
         width: 75%;  
         }
-    .footer_special_text_color {
-        font-size: 16px; 
-        color: rgba(237, 240, 245, 1); 
-        font-family: 'Ubuntu', sans-serif; 
-        font-weight: 400; 
-        text-decoration: none;
-        padding: 8px;
-        }
+    
     
 }
 
@@ -110,7 +98,7 @@
         align-items: center;
         font-size: 50px; 
         color: rgba(8, 38, 66, 1); 
-        font-family: 'Ubuntu', sans-serif; 
+        font-family: $type_brand;
         font-weight: 300; 
         padding-left: 0%;
         padding-top: 0%;
